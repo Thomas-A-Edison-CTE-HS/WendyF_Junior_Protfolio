@@ -16,19 +16,20 @@ html {
   font-family: "fantasy", system-ui;
   font-weight: 400;
   font-style: normal;
-}/* Box Container */
-.link-box {
-  border: 2px solid #E65637; 
-  padding: 10px;             
-  border-radius: 8px;        
-  display: inline-block;     
-  background-color: #FFF4E6; 
 }
-
-/* Link Styling */
-.box-link {
-  font-size: 24px;           
-  color: #EB51C0;            
-  font-weight: bold;      
-  text-decoration: none;     
+nav ul {
+list-style: none;
+padding: 0;
+} 
+nav ul li (
+display: inline;
+  margin: 0 15px;
+} 
+nav ul 1i a ( 
+color: #fff;
+text-decoration: none;
 }
+  section{   
+padding: 20px;
+background-color: ffaffd;
+  }
