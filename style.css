@@ -1,175 +1,73 @@
-
-html {
-  height: 100%;
-  width: 100%;
-}
-#heading{
-  font-size: 5.5em;
-  color: #DE35E3;
-  font-family:fantasy;
-  font-weight:400;
-  font-style:normal;
-  text-align:center;
-  padding:4px;
-  text-shadow: 1px 1px 2px #FF69B4, 0 0 25px #F33A6A, 0 0 5px #E0115F;
-}
-.Send Flowers-regular {
-  font-family: "fantasy", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  color: #DD9857;
-}
-h2{
-  font-family: "fantasy", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  text-align:center;
-  font-size: 60px;
-  color: #FF69B4;
-  text-shadow:1px 1px 2px #DC7145;
-}
-p{
-  font-family: "fantasy", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  text-align:center;
-  font-size: 30px;
-  text-shadow:1px 1px 2px #FAA44A
-}
-li{
-  display:inline;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-#navi{
-  background-image: url("Coquette Pink Bow Pattern.jpg");
-  padding: 20px;
-  position: relative;
-  text-align:center;
-  font-size: 1.3em;
-  box-shadow: 1px 3px 30px 1px  #F2A412;
-}
-a{
-  padding: 20px;
-  position: relative;
-  text-align:center;
-  font-size: 30px;
-  word-spacing: 200px;
-   font-family: "fantasy", system-ui;
-  text-decoration: none;
-}
-body{
-  background-color: #D957DD;
-}
-a:hover{
-  color:#F33A6A;
+/* Basic reset for margins, padding, and font styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-a:link{
-  color:#FF69B4;
-}
-a:visited{
-  color:#AA336A;
-}
-#subheading{
-  font-size: 5.5em;
-  letter-spacing: 0.3cm;
-  color:#000000;
-  font-family:fantasy;
-  font-weight:400;
-  font-style:normal;
-  text-align:center;
-  padding:55px;
-}
-#labs{
-
-  font-size: 2em;
-  padding:20px;
-}
-.container{
-  box-shadow: 1px 3px 30px 1px #ffffff;
-  color: #000000;
-  height:2500px;
- margin: 15px;
-  overflow:hidden;
-  text-align: center;
-}
-.wave{
-  border: 1px dashed black;
-  height:50px;
-  width: 80%;
-  position: relative;
-  left:10%;
-  transition: height 4s;
-  display:block;
-  overflow:hidden;
-
-}
-u1{
-  transition: height 4s;
-}
-#u1:hover{
-  height:1500px;
-  z-index: 1;
-}
-b{
-  font-family: "fantasy", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  text-align:center;
-  font-size: 2em;
-}
-iframe{
-  float: left;
-}
-.container1{
-  box-shadow: 1px 3px 30px 1px #ffffff;
-  color: #000000;
-  height:50%;
- margin: 15px;
-  overflow:hidden;
-  text-align: center;
-}
-#description{
-  float:left;
-  width:49.5%;
-  font-size:1.5em;
-  color: #ffffff;
-}
-#photo{
-  float:right;
-  width:49.5%
-}
-img{
-  border-color: white;
-  border-style: dotted;
-  border-width: 10px;
-  border-radius: 10px;
-  box-shadow: 1px 3px 30px 1px  #ffffff;
-}
-#lablink{
-  font-size: 1.4em;
-  padding:20px;
+/* Body styles */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-#lablink:hover{
-  background-color: none;
-  color:#bf7db3;
+/* Header and banner styles */
+header {
+    background-color: #2c3e50;
+    padding: 20px 0;
 }
 
-#labsnavi{
-  background-color: white;
-  border:2px #ededed solid
+.banner h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
 }
 
-#banner{
- ont-size: 5.5em;
-  color: #DE35E3;
-  font-family: Send Flowers;
-  font-weight:400;
-  font-style:normal;
-  text-align:center;
+/* Main content styles */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.content {
+    text-align: center;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
