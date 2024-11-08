@@ -1,81 +1,18 @@
-/* Reset for consistent styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+html {
+  height: 100%;
+  width: 100%;
 }
-
-/* Body styling */
-body {
-    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+#heading{
+  font-size: 5.5em;
+  color: #DE35E3;
+  font-family:fantasy;
+  font-weight:400;
+  font-style:normal;
+  text-align:center;
+  padding:4px;
+  text-shadow: 1px 1px 2px #FF69B4, 0 0 25px #F33A6A, 0 0 5px #E0115F;
 }
-
-/* Header styling */
-header {
-    background-color: #34495e; /* Dark blue-gray */
-    padding: 20px 0;
-    text-align: center;
-}
-
-.banner h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Soft shadow */
-}
-
-/* Main content */
-main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    text-align: center;
-}
-
-.content p {
-    font-size: 1.4rem;
-    margin-bottom: 30px;
-    max-width: 500px;
-    line-height: 1.6;
-}
-
-/* Call-to-action button styling */
-.cta-button {
-    display: inline-block;
-    padding: 15px 35px;
-    font-size: 1.2rem;
-    background: #3498db; /* Blue button */
-    color: white;
-    text-decoration: none;
-    border-radius: 25px; /* Rounded edges */
-    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3); /* Soft shadow for button */
-    transition: all 0.3s ease;
-}
-
-/* Hover effect for the button */
-.cta-button:hover {
-    background: #2980b9; /* Darker blue on hover */
-    transform: translateY(-3px); /* Slight lift effect */
-    box-shadow: 0 10px 20px rgba(52, 152, 219, 0.5); /* Bigger shadow */
-}
-
-/* Footer styling */
-footer {
-    background-color: #34495e;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-}
-
-footer p {
-    font-size: 1rem;
-    margin: 0;
-    opacity: 0.7;
-}
+.Send Flowers-regular {
+  font-family: "fantasy", system-ui;
+  font-weight: 400;
+  font-style: normal;
