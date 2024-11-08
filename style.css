@@ -18,17 +18,17 @@ html {
   font-style: normal;
 }/* Box Container */
 .link-box {
-  border: 2px solid #FF4500; /* Orange border */
-  padding: 10px;             /* Space inside the box */
-  border-radius: 8px;        /* Rounded corners */
-  display: inline-block;     /* Fits the box closely around the link */
-  background-color: #FFF4E6; /* Light background color */
+  border: 2px solid #E65637; 
+  padding: 10px;             
+  border-radius: 8px;        
+  display: inline-block;     
+  background-color: #FFF4E6; 
 }
 
 /* Link Styling */
 .box-link {
-  font-size: 24px;           /* Large font */
-  color: #FF4500;            /* Bright orange-red color */
-  font-weight: bold;         /* Bold text */
-  text-decoration: none;     /* Removes underline */
+  font-size: 24px;           
+  color: #EB51C0;            
+  font-weight: bold;      
+  text-decoration: none;     
 }
