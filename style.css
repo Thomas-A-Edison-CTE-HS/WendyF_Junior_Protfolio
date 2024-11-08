@@ -17,10 +17,22 @@ html {
   font-weight: 400;
   font-style: normal;
 }
-}<li><a href="CFU.html" style="font-size: 24px; color: #FF4500; font-weight: bold; text-decoration: none;">CFU</a></li>
 }
-<div class="banner">
-  <h1>Welcome to My Website</h1>
-  <p>Your tagline or message here</p>
-</div>
+.banner {
+  background-color: #4CAF50; 
+  color: white;              
+  padding: 20px;             
+  text-align: center;      
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.banner h1 {
+  font-size: 36px;          
+  margin: 0;               
+}
+
+.banner p {
+  font-size: 18px;         
+  margin-top: 10px;
 }
