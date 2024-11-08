@@ -16,3 +16,14 @@ html {
   font-family: "fantasy", system-ui;
   font-weight: 400;
   font-style: normal;
+}
+
+#banner{
+ ont-size: 5.5em;
+  color: #DE35E3;
+  font-family: Send Flowers;
+  font-weight:400;
+  font-style:normal;
+  text-align:center;
+}
+  
