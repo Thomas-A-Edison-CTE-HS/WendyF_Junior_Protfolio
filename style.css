@@ -19,13 +19,8 @@ html {
 }
 }<li><a href="CFU.html" style="font-size: 24px; color: #FF4500; font-weight: bold; text-decoration: none;">CFU</a></li>
 }
-
-#banner{
- ont-size: 5.5em;
-  color: #DE35E3;
-  font-family: Send Flowers;
-  font-weight:400;
-  font-style:normal;
-  text-align:center;
+<div class="banner">
+  <h1>Welcome to My Website</h1>
+  <p>Your tagline or message here</p>
+</div>
 }
-  
