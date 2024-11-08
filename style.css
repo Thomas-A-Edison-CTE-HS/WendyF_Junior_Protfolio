@@ -16,23 +16,19 @@ html {
   font-family: "fantasy", system-ui;
   font-weight: 400;
   font-style: normal;
-}
-}
-.banner {
-  background-color: #4CAF50; 
-  color: white;              
-  padding: 20px;             
-  text-align: center;      
-  font-family: Arial, sans-serif;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}/* Box Container */
+.link-box {
+  border: 2px solid #FF4500; /* Orange border */
+  padding: 10px;             /* Space inside the box */
+  border-radius: 8px;        /* Rounded corners */
+  display: inline-block;     /* Fits the box closely around the link */
+  background-color: #FFF4E6; /* Light background color */
 }
 
-.banner h1 {
-  font-size: 36px;          
-  margin: 0;               
-}
-
-.banner p {
-  font-size: 18px;         
-  margin-top: 10px;
+/* Link Styling */
+.box-link {
+  font-size: 24px;           /* Large font */
+  color: #FF4500;            /* Bright orange-red color */
+  font-weight: bold;         /* Bold text */
+  text-decoration: none;     /* Removes underline */
 }
