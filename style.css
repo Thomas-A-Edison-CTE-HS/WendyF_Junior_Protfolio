@@ -96,3 +96,11 @@ a:visited{
   overflow:hidden;
   text-align: center;
 }
+
+img{
+  border-color: white;
+  border-style: dotted;
+  border-width: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 3px 30px 1px  #ffffff;
+}
