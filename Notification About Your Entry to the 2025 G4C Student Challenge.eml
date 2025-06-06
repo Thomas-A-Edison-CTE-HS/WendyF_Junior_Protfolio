@@ -1,0 +1,309 @@
+Delivered-To: wendyf30@nycstudents.net
+Received: by 2002:a05:6a20:4387:b0:218:2c33:68ba with SMTP id i7csp733664pzl;
+        Tue, 20 May 2025 13:19:16 -0700 (PDT)
+X-Received: by 2002:a05:6870:1783:b0:2c7:6150:fff7 with SMTP id 586e51a60fabf-2e3c1f9daf9mr12416397fac.35.1747772356125;
+        Tue, 20 May 2025 13:19:16 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1747772356; cv=none;
+        d=google.com; s=arc-20240605;
+        b=NZs4y9ZJy6KwdF16BzpGReegSEW35yCIVLochyLrS1eueAfZJUWNVamKAS90Vk226j
+         vOFh7niAGAPDz7fBY++7X8Ne33zq3GXzfSMdXq3ttsVerX2Id2ltqddoiAqKIxiO+Y9H
+         UXfcSW4sEcLZHVQX9ak4FQplww+RItUN5iSxcPi9kU4vuEliR2moQEzw/plkN1Ckbgtx
+         2hXI6BAC02bOmI0Jwbbzbz1TogKb8G3pW4F2uChOFS/ytd/ulfJ7AewuxSscPzZtjsfJ
+         PXklXK2VSC1QGP5d5YJzKVRF7scQhehriph7iT+4cxgusG2Jk1KL2uksCNhLAPf2k1vE
+         q49Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=cc:to:subject:message-id:date:reply-to:from:sender:mime-version
+         :dkim-signature;
+        bh=yc4Fm1dZPvxfCY7TEptm2EcY8cFuLzz38kI4WtmDlt0=;
+        fh=weC0qnGaoSODS4xNRkuaTe0vhFTPBMf4gRGQOzyBkDQ=;
+        b=OjbOwfjGKmW8UW6dNLgiWsYG0LhTnswvY5M/qcuN0iN+gD0Bm7raBuFEWTxb8/A7y2
+         I1l7VZrj5/UY1njJIfBnXdZo2X94Pbyy3tNEybqLl4qQ9ycI/toety94OBycIhhKk2Uz
+         mH8cAz6UwSBg5r5bWhjbSwl6auwGFnZWt3Y+cGbu2IbH5oVvn11bo74fkcV1TvcQpCYs
+         8NRTF7A6sw0JloWjDcpdd/H8zbBGVT+R9mCJ0r2JnGqVYkd+ElbbXdQLjcMiUd12kixe
+         BnFQZbJli1U+iYNZoYRNvdI75R+naqIek18C5GOes7+HohQt4z45kldlPiezKVyqhOHB
+         LvRQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gamesforchange-org.20230601.gappssmtp.com header.s=20230601 header.b=d7zdaQz6;
+       spf=pass (google.com: domain of studentchallenge@gamesforchange.org designates 209.85.220.41 as permitted sender) smtp.mailfrom=studentchallenge@gamesforchange.org;
+       dara=pass header.i=@nycstudents.net
+Return-Path: <studentchallenge@gamesforchange.org>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 586e51a60fabf-2e3c05fe2d5sor1957410fac.2.2025.05.20.13.19.15
+        for <wendyf30@nycstudents.net>
+        (Google Transport Security);
+        Tue, 20 May 2025 13:19:16 -0700 (PDT)
+Received-SPF: pass (google.com: domain of studentchallenge@gamesforchange.org designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gamesforchange-org.20230601.gappssmtp.com header.s=20230601 header.b=d7zdaQz6;
+       spf=pass (google.com: domain of studentchallenge@gamesforchange.org designates 209.85.220.41 as permitted sender) smtp.mailfrom=studentchallenge@gamesforchange.org;
+       dara=pass header.i=@nycstudents.net
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gamesforchange-org.20230601.gappssmtp.com; s=20230601; t=1747772355; x=1748377155; darn=nycstudents.net;
+        h=cc:to:subject:message-id:date:reply-to:from:sender:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=yc4Fm1dZPvxfCY7TEptm2EcY8cFuLzz38kI4WtmDlt0=;
+        b=d7zdaQz63GZEIG9yF72EL1MaYlG2Ndwl0GBIr2WlcN+Js4xXM3P4E5ei0b6z+9KzHS
+         g0ZKsGTUfnkmQ3aDkgu8czr41Sy9icxd8j9VvC2gMDoNJ5vT/JhBRprCzHOMKDc9m+wI
+         oOOXbbKuJHm20i3q5xF5M4hEiB0l0AaN5Fwzu7Hl90Dn2R9bUfQHWk4P5HLdnT+EKh7c
+         RfekcVz32AfwHWprtZ2nJTrUpXY8NmziaF3SPZyYdoCDusOGqhnvHPIVvthD20+kIFXE
+         6eutcXiY5K/uk+J1bUH7T5Y+Tx083BVMmSpPbrUwfMnCoMuDgQgHmlQtRGCqGoDuXSUu
+         SisQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1747772355; x=1748377155;
+        h=cc:to:subject:message-id:date:reply-to:from:sender:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=yc4Fm1dZPvxfCY7TEptm2EcY8cFuLzz38kI4WtmDlt0=;
+        b=QTeBlna/yaeX6w2dZehejaW7Hed3PERvkmxYVdf2AhxTESYgOQtXvTjTR+wCuUEgtq
+         BccxiXJ9Ri9fbxbS6sORBTiwSBE+wNH0k5sRVnDwYMPQWTZ4w3FEzjKOKbiL7+bVap24
+         F+fwAbFm6WMH9KcuDZ0Ngi70CR4idc05Akyzxl37IxYieCF3JFnql73ivUASzb34pSDo
+         ldIl9CxH1kPg6LTVaXeQVk6NQvyTrSxcDxDt/HgsWjKToNArGgwfPlYFqPi0fRRMbl5j
+         6qZKYGsQPVKQmBni8CkBP/lE1iKFLX3/kLF/JRTMyGtvZWNMo4yeSVnU9eO9xExGJFMW
+         47Rg==
+X-Gm-Message-State: AOJu0Yxtqx6iI1EObF4T+n1YjFDcDJBZdhX00wCQbVs/6+r9fsgok4fH
+	xKcrSAtcdSungrfOmtAa5cBW8YxpqzP8ze9dHvN6UgKDqTfsSwnxPy2OUISt/+KwYtrh+5tMDE5
+	YC9A48KGDOc+2n3qSnB9J0vuwTVXOA3YHyFKBv++v+g==
+X-Gm-Gg: ASbGnct5yGdAN6x2WCRsQIX3jhD/3bzQHOcEDLvfOfqHzfMqYxwsJlMSk9sqi/VlErb
+	fwnSwADFDNdiAaqQty1QAq/bAw3NkXUfbUNTnRuEYrSG8sNV9c1INJf+/DG5yGMJAjIghgoK0gA
+	/ZqAnO4R5lUK0qjsS8CbKxoMcf4aPA3A+sdNUXTCIxsL+iGzERAt7x6a0=
+X-Google-Smtp-Source: AGHT+IH8LQWVRDFZ41GJtbatO+Qrob4b5AVuiVYi5ZyNRkYVjRgpTkR4yM+1Q3cOz3awrab5DfvskCnOB8eN7z5o+uw=
+X-Received: by 2002:a05:6871:4389:b0:2d5:2955:aa66 with SMTP id
+ 586e51a60fabf-2e3c1b6a63fmr11329741fac.1.1747772355515; Tue, 20 May 2025
+ 13:19:15 -0700 (PDT)
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Tue, 20 May 2025 13:19:14 -0700
+Received: from 52669349336 named unknown by gmailapi.google.com with HTTPREST;
+ Tue, 20 May 2025 13:19:14 -0700
+MIME-Version: 1.0
+Sender: G4C Student Challenge <studentchallenge@gamesforchange.org>
+From: G4C Student Challenge <studentchallenge@gamesforchange.org>
+Reply-To: studentchallenge@gamesforchange.org, lucas@gamesforchange.org
+Date: Tue, 20 May 2025 13:19:14 -0700
+X-Google-Sender-Auth: O8YSIKxT5P_J9cQ3Y5h3buAdiVo
+X-Gm-Features: AX0GCFtqS1rdUL1vuUpNBcfHjX1GsoAqAwwqvIMkzxlR9BL8iQSBkwt-EWM8VGU
+Message-ID: <CAFWDKNSYj7_gpa2vQRWz2Oqk47Od55Gydyjt=VYnX3p2gf9LQw@mail.gmail.com>
+Subject: Notification About Your Entry to the 2025 G4C Student Challenge
+To: Wendyf <wendyf30@nycstudent.net>
+Cc: Wendyf <wendyf30@nycstudents.net>, LRamirez <lramirez3@schools.nyc.gov>
+Content-Type: multipart/alternative; boundary="0000000000006627ab063596f69b"
+
+--0000000000006627ab063596f69b
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Wendy,
+
+Thank you for submitting your entry =E2=80=98Gigi the explorer=E2=80=99 to =
+the 2025 G4C
+Student Challenge. We had a very competitive submission pool, and
+unfortunately, your entry was not selected as a Finalist this year.
+
+We appreciate all of the time and hard work you put into your submission
+and hope you continue to make excellent social impact games/artwork! We
+also welcome you to cheer on your friends and fellow competitors by tuning
+into the Virtual Student Challenge Awards Ceremony, taking place on Thursda=
+y,
+June 12th. Sign up for the Awards Ceremony TODAY:
+https://bit.ly/2025SCAwards
+<https://gamesforchange-dot-yamm-track.appspot.com/2W_8O-tVQOfB3C1Q3-7y9nBC=
+U15B37v7LiKBbcAigySOHrVnvlgFCA3o8fev2F4Q9M_FoI8flWqFUB2OaCGYfRNU0uTOgh79Vwp=
+DC1R_Pf-uBYgptzqCQ0c_Jb5Ctmov9oeJuFUR2L-URRsx1-CBwXUyQ2y5OSLeCQumZRovdvxv7E=
+042Qxc2WdTqV_fQX28cXaY>
+
+
+
+Want to snag a $10.00 gift card and a chance to win a Metaquest headset? Be
+one of the first 100 students to fill out this Post Program Survey
+<https://gamesforchange-dot-yamm-track.appspot.com/2GLPSNdRmaN0YxFI-TIdvE5_=
+NcUemw88DRZzLgM8-93aNrVnvlgHIiXTZrtiWCCBfuNUGsuOhCfx1Q3kZgVBRqAL0eAk9VfRfYj=
+0tZq7-HOMw2cZnUdchC9Ddo3X8rqIc9IPnMuRGgR7wrqLixunx-VelGx8e6T9c6OOFY5KAuNKTp=
+cDlslNMNTywis2IsGzR7F98Jf278w1kXg>
+to let us know what you thought of this year=E2=80=99s Student Challenge!
+
+Stay in the loop by joining the Student Challenge Discord Server
+<https://gamesforchange-dot-yamm-track.appspot.com/2LSlgdQsWTmqojLyaqHnP39w=
+NjGdqprlyDAxE8_VCzJyQrVnvlgEJVCbP5h_gC-O9Pw41oSHkcmRWZFPTwgNu5eXZWzQ5Q7Beh_=
+JkE9DjkeHeeLjyCo4YJJW2tbDSLifwPL8FWcuxRNFtojW2benszztUcAPqMOemWk4qFNbr-EccW=
+rlaU_qzxRdqbUM8AOxPoYyK>!
+You=E2=80=99ll be one of the first to know the details of the 2026 competit=
+ion.
+
+Best,
+
+*G4C Student Challenge*
+---
+
+*Email*: studentchallenge@gamesforchange.org
+*Website*: www.gamesforchange.org/studentchallenge
+<https://gamesforchange-dot-yamm-track.appspot.com/2BAQNi2OjEBzUz-AKu_aU7U_=
+8x7b-AvafDAth1E6HcFCUrVnvlgElw5bg7JfBUchMFdDoXXox7slXQpNPd2pjnD8-kdOn-eNAa4=
+331l0qof1nw6gwJ0MovrsrFU-gdmpBhjRdV4sisSEmd45CAn0LPKncgdvl8h5mTnfgUbhGhxaL2=
+rnceqK3J0MZ4FMdaXlsXlVJaQ>
+*Hashtag*: #G4CStudent
+
+<https://gamesforchange-dot-yamm-track.appspot.com/2in8NfzZWUJ0rOKiABWmV5tQ=
+KY5N1sxaZsU1nhWBdWkuXrVnvlgH9-70KpzLYR3NGwN_tb6oRL5JBnGb5bmswRZWQQ_woNib_DL=
+4tOmvo40ub4Isv2khUHbETSdH319qOefhhxuU516HJP6Aem-gdtKt3JNZ54szYbnE-BffYWEteG=
+2UCJy29syrEddJPv-Xvq3OoDTpy8sRbeh02VN8BxfALges>
+<https://gamesforchange-dot-yamm-track.appspot.com/2u4wy9sFkMA4Z4pwTPVdTD2T=
+sgcp2FcOVsguOgq1B5i6arVnvlgExeWYk6HhHeJErxlWiFQLNfXoAvV4hf7F9W2-kTpwY065FDC=
+pxXgAAkKMFuhI-e_xX5RINtGJ24HHQ11cIdKbNdcJ2efab8johYgAE1B_cat1LRY7mM4OhjsLJ7=
+OmBeazrIA0>
+<https://gamesforchange-dot-yamm-track.appspot.com/23rGpi9naIu2R3S7pMIdyh5s=
+jMgA4P3BLZVbB3Qt2WpierVnvlgEYBiVsAWzZ9mPVetbrVF20TjyhS5P1Ivo1krWADzkWTdYqJU=
+eGYRSFsszu03Ni6z8Z_cQNuanNL4lwbYj2ZqeK51N5e-6hjnwsTSP0c_cuX0QbXvHdMwUZRo22o=
+9ue6MiWKudFdjKUNBk>
+[image: beacon]
+
+--0000000000006627ab063596f69b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><span id=3D"gmail-docs-internal-guid-e8cbb9e3-7fff-a8=
+bd-dfb2-d59fa2cf6aca"><p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0=
+pt;margin-bottom:0pt"><span style=3D"font-size:11pt;font-family:Arial,sans-=
+serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:no=
+rmal;font-variant-east-asian:normal;font-variant-alternates:normal;vertical=
+-align:baseline">Hello Wendy,</span></p><br><p dir=3D"ltr" style=3D"line-he=
+ight:1.38;margin-top:0pt;margin-bottom:0pt"><span style=3D"font-size:11pt;f=
+ont-family:Arial,sans-serif;color:rgb(0,0,0);background-color:transparent;f=
+ont-variant-numeric:normal;font-variant-east-asian:normal;font-variant-alte=
+rnates:normal;vertical-align:baseline">Thank you for submitting your entry =
+=E2=80=98Gigi the explorer</span><span style=3D"font-size:11pt;font-family:=
+Arial,sans-serif;color:rgb(0,0,0);background-color:transparent;font-weight:=
+700;font-variant-numeric:normal;font-variant-east-asian:normal;font-variant=
+-alternates:normal;vertical-align:baseline">=E2=80=99 </span><span style=3D=
+"font-size:11pt;font-family:Arial,sans-serif;color:rgb(0,0,0);background-co=
+lor:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;=
+font-variant-alternates:normal;vertical-align:baseline">to the 2025 G4C Stu=
+dent Challenge. We had a very competitive submission pool, and unfortunatel=
+y, your entry was not selected as a Finalist this year.</span></p><br><p di=
+r=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt"><span=
+ style=3D"font-size:11pt;font-family:Arial,sans-serif;color:rgb(0,0,0);back=
+ground-color:transparent;font-variant-numeric:normal;font-variant-east-asia=
+n:normal;font-variant-alternates:normal;vertical-align:baseline">We appreci=
+ate all of the time and hard work you put into your submission</span><span =
+style=3D"font-size:11pt;font-family:Arial,sans-serif;color:rgb(0,0,0);font-=
+variant-numeric:normal;font-variant-east-asian:normal;font-variant-alternat=
+es:normal;vertical-align:baseline"> and hope you continue to make excellent=
+ social impact games/artwork! </span><span style=3D"font-size:11pt;font-fam=
+ily:Arial,sans-serif;color:rgb(0,0,0);background-color:transparent;font-var=
+iant-numeric:normal;font-variant-east-asian:normal;font-variant-alternates:=
+normal;vertical-align:baseline">We also welcome you to cheer on your friend=
+s and fellow competitors by tuning into the Virtual Student Challenge Award=
+s Ceremony, taking place on </span><span style=3D"font-size:11pt;font-famil=
+y:Arial,sans-serif;color:rgb(255,0,0);background-color:transparent;font-wei=
+ght:700;font-variant-numeric:normal;font-variant-east-asian:normal;font-var=
+iant-alternates:normal;vertical-align:baseline">Thursday, June 12th</span><=
+span style=3D"font-size:11pt;font-family:Arial,sans-serif;color:rgb(0,0,0);=
+background-color:transparent;font-variant-numeric:normal;font-variant-east-=
+asian:normal;font-variant-alternates:normal;vertical-align:baseline">. Sign=
+ up for the Awards Ceremony TODAY: </span><a href=3D"https://gamesforchange=
+-dot-yamm-track.appspot.com/2W_8O-tVQOfB3C1Q3-7y9nBCU15B37v7LiKBbcAigySOHrV=
+nvlgFCA3o8fev2F4Q9M_FoI8flWqFUB2OaCGYfRNU0uTOgh79VwpDC1R_Pf-uBYgptzqCQ0c_Jb=
+5Ctmov9oeJuFUR2L-URRsx1-CBwXUyQ2y5OSLeCQumZRovdvxv7E042Qxc2WdTqV_fQX28cXaY"=
+ rel=3D"nofollow" style=3D"text-decoration-line:none"><span style=3D"font-s=
+ize:11pt;font-family:Arial,sans-serif;background-color:transparent;font-var=
+iant-numeric:normal;font-variant-east-asian:normal;font-variant-alternates:=
+normal;text-decoration-line:underline;vertical-align:baseline">https://bit.=
+ly/2025SCAwards</span></a></p><br><br><p dir=3D"ltr" style=3D"line-height:1=
+.38;text-align:center;margin-top:0pt;margin-bottom:0pt"><span style=3D"font=
+-size:11pt;font-family:Arial,sans-serif;color:rgb(0,0,0);background-color:t=
+ransparent;font-variant-numeric:normal;font-variant-east-asian:normal;font-=
+variant-alternates:normal;vertical-align:baseline"><span style=3D"border:no=
+ne;display:inline-block;overflow:hidden;width:582px;height:103px"><img src=
+=3D"https://lh7-rt.googleusercontent.com/docsz/AD_4nXeWtOxmowU44CMXR8HXbEHY=
+3XuDT1lBQ25cbfKifWCW9JyrgeldmNG-IuXpMNso7Zfap2ofwfOaRYFrbHWxygNR-Lj2m4aKQFt=
+pNAwZYvzOJyVyua5r_6nX8k91XIszd8i2MhZdyA?key=3DqT5Byazz4ts75Btd359YTIpu" wid=
+th=3D"582" height=3D"103" style=3D"margin-left: 0px; margin-top: 0px;"></sp=
+an></span></p><br><p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;m=
+argin-bottom:0pt"><span style=3D"font-size:11pt;font-family:Arial,sans-seri=
+f;color:rgb(0,0,0);font-variant-numeric:normal;font-variant-east-asian:norm=
+al;font-variant-alternates:normal;vertical-align:baseline">Want to snag a $=
+10.00 gift card and a chance to win a Metaquest headset? Be one of the firs=
+t 100 students to fill out </span><a href=3D"https://gamesforchange-dot-yam=
+m-track.appspot.com/2GLPSNdRmaN0YxFI-TIdvE5_NcUemw88DRZzLgM8-93aNrVnvlgHIiX=
+TZrtiWCCBfuNUGsuOhCfx1Q3kZgVBRqAL0eAk9VfRfYj0tZq7-HOMw2cZnUdchC9Ddo3X8rqIc9=
+IPnMuRGgR7wrqLixunx-VelGx8e6T9c6OOFY5KAuNKTpcDlslNMNTywis2IsGzR7F98Jf278w1k=
+Xg" rel=3D"nofollow" style=3D"text-decoration-line:none"><span style=3D"fon=
+t-size:11pt;font-family:Arial,sans-serif;font-weight:700;font-variant-numer=
+ic:normal;font-variant-east-asian:normal;font-variant-alternates:normal;tex=
+t-decoration-line:underline;vertical-align:baseline">this Post Program Surv=
+ey</span></a><span style=3D"font-size:11pt;font-family:Arial,sans-serif;col=
+or:rgb(0,0,0);font-variant-numeric:normal;font-variant-east-asian:normal;fo=
+nt-variant-alternates:normal;vertical-align:baseline"> to let us know what =
+you thought of this year=E2=80=99s Student Challenge!</span></p><br><p dir=
+=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt"><span =
+style=3D"font-size:11pt;font-family:Arial,sans-serif;color:rgb(0,0,0);font-=
+variant-numeric:normal;font-variant-east-asian:normal;font-variant-alternat=
+es:normal;vertical-align:baseline">Stay in the loop by joining the </span><=
+a href=3D"https://gamesforchange-dot-yamm-track.appspot.com/2LSlgdQsWTmqojL=
+yaqHnP39wNjGdqprlyDAxE8_VCzJyQrVnvlgEJVCbP5h_gC-O9Pw41oSHkcmRWZFPTwgNu5eXZW=
+zQ5Q7Beh_JkE9DjkeHeeLjyCo4YJJW2tbDSLifwPL8FWcuxRNFtojW2benszztUcAPqMOemWk4q=
+FNbr-EccWrlaU_qzxRdqbUM8AOxPoYyK" rel=3D"nofollow" style=3D"text-decoration=
+-line:none"><span style=3D"font-size:11pt;font-family:Arial,sans-serif;font=
+-variant-numeric:normal;font-variant-east-asian:normal;font-variant-alterna=
+tes:normal;text-decoration-line:underline;vertical-align:baseline">Student =
+Challenge Discord Server</span></a><span style=3D"font-size:11pt;font-famil=
+y:Arial,sans-serif;color:rgb(0,0,0);font-variant-numeric:normal;font-varian=
+t-east-asian:normal;font-variant-alternates:normal;vertical-align:baseline"=
+>! You=E2=80=99ll be one of the first to know the details of the 2026 compe=
+tition.</span></p><br><p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0=
+pt;margin-bottom:0pt"><span style=3D"font-size:11pt;font-family:Arial,sans-=
+serif;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:no=
+rmal;font-variant-east-asian:normal;font-variant-alternates:normal;vertical=
+-align:baseline">Best,</span></p></span><br class=3D"gmail-Apple-interchang=
+e-newline"></div><div><div dir=3D"ltr" class=3D"gmail_signature" data-smart=
+mail=3D"gmail_signature"><div dir=3D"ltr"><div dir=3D"ltr"><font color=3D"#=
+444444"><b>G4C Student Challenge</b></font></div><div><span style=3D"font-s=
+ize:11pt;font-family:Arial;background-color:transparent;vertical-align:base=
+line;white-space:pre-wrap"><font color=3D"#000000">---</font></span></div><=
+div><span style=3D"font-size:11pt;font-family:Arial;background-color:transp=
+arent;vertical-align:baseline;white-space:pre-wrap"><font color=3D"#000000"=
+><br></font></span></div><div dir=3D"ltr"><div><font color=3D"#666666"><b>E=
+mail</b>:</font>=C2=A0<a href=3D"mailto:studentchallenge@gamesforchange.org=
+" target=3D"_blank">studentchallenge@gamesforchange.org</a><div style=3D"fo=
+nt-size:12.8px"><font color=3D"#666666"><b>Website</b>:</font><span style=
+=3D"color:rgb(0,0,0)">=C2=A0<a href=3D"https://gamesforchange-dot-yamm-trac=
+k.appspot.com/2BAQNi2OjEBzUz-AKu_aU7U_8x7b-AvafDAth1E6HcFCUrVnvlgElw5bg7JfB=
+UchMFdDoXXox7slXQpNPd2pjnD8-kdOn-eNAa4331l0qof1nw6gwJ0MovrsrFU-gdmpBhjRdV4s=
+isSEmd45CAn0LPKncgdvl8h5mTnfgUbhGhxaL2rnceqK3J0MZ4FMdaXlsXlVJaQ" rel=3D"nof=
+ollow" target=3D"_blank">www.gamesforchange.org/studentchallenge</a></span>=
+</div><div><font color=3D"#666666"><b>Hashtag</b>:=C2=A0#G4CStudent=C2=A0</=
+font></div><div dir=3D"ltr" style=3D"color:rgb(80,0,80);font-size:12.8px"><=
+span style=3D"color:rgb(0,0,0)"><div style=3D"line-height:1.38;margin-top:0=
+pt;margin-bottom:0pt"><br></div></span></div><a href=3D"https://gamesforcha=
+nge-dot-yamm-track.appspot.com/2in8NfzZWUJ0rOKiABWmV5tQKY5N1sxaZsU1nhWBdWku=
+XrVnvlgH9-70KpzLYR3NGwN_tb6oRL5JBnGb5bmswRZWQQ_woNib_DL4tOmvo40ub4Isv2khUHb=
+ETSdH319qOefhhxuU516HJP6Aem-gdtKt3JNZ54szYbnE-BffYWEteG2UCJy29syrEddJPv-Xvq=
+3OoDTpy8sRbeh02VN8BxfALges" rel=3D"nofollow" style=3D"font-size:12.8px" tar=
+get=3D"_blank"><span style=3D"font-size:11pt;font-family:Arial;vertical-ali=
+gn:baseline;white-space:pre-wrap"><img src=3D"https://lh4.googleusercontent=
+.com/tIyPjW1Q_H8ac6N19yZOO4lFaiPYlkb-7j3oFGcsT4aqC21iy6tuHy1KKWGwZ3j82sLJuP=
+u4A5oKMdzc8SFdmSyxVs-0aIssD9dOAQhI7tAbZztd9nyL_cxWn-FrnP82Qbc4LN0Z" width=
+=3D"25" height=3D"25" style=3D"border:medium none"></span></a><a href=3D"ht=
+tps://gamesforchange-dot-yamm-track.appspot.com/2u4wy9sFkMA4Z4pwTPVdTD2Tsgc=
+p2FcOVsguOgq1B5i6arVnvlgExeWYk6HhHeJErxlWiFQLNfXoAvV4hf7F9W2-kTpwY065FDCpxX=
+gAAkKMFuhI-e_xX5RINtGJ24HHQ11cIdKbNdcJ2efab8johYgAE1B_cat1LRY7mM4OhjsLJ7OmB=
+eazrIA0" rel=3D"nofollow" style=3D"font-size:12.8px" target=3D"_blank"><spa=
+n style=3D"font-size:11pt;font-family:Arial;vertical-align:baseline;white-s=
+pace:pre-wrap"><img src=3D"https://lh4.googleusercontent.com/HUmlm_r24nEx2u=
+wf79UaL6IcKYv-Nm6p_7_lGYGRqSG4ViRfMRiqlUwzH2-qpYBuj6oPeuBqJtqljujTTBcpSsp9x=
+BmcgKouIMSow4Tumwb2-Mmn3V7D_NCCwv6IY2D-q7_19Zoe" width=3D"25" height=3D"25"=
+ style=3D"border:medium none"></span></a><span style=3D"color:rgb(17,85,204=
+);font-size:11pt;font-family:Arial;vertical-align:baseline;white-space:pre-=
+wrap"><a href=3D"https://gamesforchange-dot-yamm-track.appspot.com/23rGpi9n=
+aIu2R3S7pMIdyh5sjMgA4P3BLZVbB3Qt2WpierVnvlgEYBiVsAWzZ9mPVetbrVF20TjyhS5P1Iv=
+o1krWADzkWTdYqJUeGYRSFsszu03Ni6z8Z_cQNuanNL4lwbYj2ZqeK51N5e-6hjnwsTSP0c_cuX=
+0QbXvHdMwUZRo22o9ue6MiWKudFdjKUNBk" rel=3D"nofollow" target=3D"_blank"><img=
+ src=3D"https://lh6.googleusercontent.com/0bH-9Td8n8fT9UpGR5780XlGFgcSDoMij=
+cuosf_taIokw_ZfxKZmwIYjuzi40JsUim1KzBGsm4n0gY5-RdSsJlGkkfSfZsT-9hvIFi5mJ6ZM=
+3MZ-CkoKO6pXid9VhXrVD_Upns9c" width=3D"25" height=3D"25" style=3D"border:me=
+dium none"></a></span></div></div></div></div></div></div>
+<img src=3D"https://gamesforchange-dot-yamm-track.appspot.com/2DIbc6p7KcNKm=
+vS1dF6dzjm45XrjYHcbm_o9mWlShveR_rVnvlgF8nr42CdUeL2eoCiXcI8eNUvby-myXh1P47UJ=
+gjE5-fU2lrcIJHwMl25GpB6crdSZFC0CrQ42o9iGDcpuvQ92PDLycIBDKFwPxIxqy0mm2vGZjRR=
+IEbmLbxSQ" width=3D"1" height=3D"1" alt=3D"beacon" style=3D"display:none; d=
+isplay:none!important;">
+
+--0000000000006627ab063596f69b--
